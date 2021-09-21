@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="~/Home/Index">بازگشت به صفحه اصلی</a>
+                </div>
+                <div class="col-sm-4 sgn">
+                    <fieldset>
+                        <legend>
+                            به سایت آوا خوش آمدید!
+                        </legend>
+                    </fieldset>
+                    <form action="~/SignUp/SignIn" method="post">
+                        <input type="text" name="Name" placeholder="نام" />
+                        <input type="text" name="Family" placeholder="نام خانوادگی" />
+                        <input type="text" name="Age" placeholder="سن" />
+                        <input type="email" name="Email" placeholder="ایمیل" />
+                        <input type="datetime" name="DateBourn" placeholder="تاریخ تولد" />
+                        <input type="password" name="Password" placeholder="رمز عبور" />
+                        <input type="password" name="RePassword" placeholder="تکرار رمز عبور" />
+                        <input type="submit" class="btn btn-outline-warning" value="ثبت نام" />
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <br />
+                    <textarea id="content" name="content" class="ckeditor"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

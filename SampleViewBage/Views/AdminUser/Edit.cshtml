@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ 
+    User item = ViewBag.EditKarbar as User;
+}
+<section>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-12 sgn">
+                <form action="~/AdminUser/Edit1" method="post">
+                    <input type="text" name="Name" value="@item.Name"/>
+                    <input type="text" name="Family"  value="@item.Family"/>
+                    <input type="text" name="Age" value="@item.Age"/>
+                    <input type="email" name="Email" value="@item.Email"/>
+                    <input type="datetime" name="DateBourn" value="@item.DateBourn"/>
+                    <input type="password" name="Password" value="@item.Password"/>
+                    <input type="password" name="RePassword" value="@item.RePassword"/>
+                    <input type="hidden" name="Id" value="@item.Id" />
+                    <input type="submit" class="btn btn-success" value="ویرایش کاربر" />
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
